@@ -23,7 +23,7 @@ const styles={
     }
 }
 
-const Input = ({label,value,onChangeText}) => {
+const Input = ({label,value,onChangeText,placeholder,secureTextEntry}) => {
     const {inputStyle,labelStyle,containerStyle}=styles
   return (
     <View style={containerStyle}>
@@ -31,6 +31,9 @@ const Input = ({label,value,onChangeText}) => {
       <TextInput style={inputStyle}
         onChangeText={onChangeText}
         value={value}
+        placeholder={placeholder}
+        autoCorrect={false}
+        secureTextEntry={secureTextEntry}
         
       />
     </View>

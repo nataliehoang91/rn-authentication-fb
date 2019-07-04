@@ -1,3 +1,4 @@
+
 import { AppRegistry } from 'react-native';
 // eslint-disable-next-line prettier/prettier
 import App from './src/App';
